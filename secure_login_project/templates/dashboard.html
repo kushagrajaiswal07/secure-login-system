@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <style>
+        body{
+            font-family:Arial;
+            background:linear-gradient(135deg,#43cea2,#185a9d);
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            color:white;
+            text-align:center;
+        }
+        .box{
+            background:rgba(255,255,255,0.1);
+            padding:50px;
+            border-radius:20px;
+            backdrop-filter:blur(10px);
+        }
+        a{
+            display:inline-block;
+            margin-top:20px;
+            padding:10px 20px;
+            background:white;
+            color:#185a9d;
+            border-radius:10px;
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h1>Welcome {{ user }}</h1>
+    <p>You have successfully logged in to Secure System 🔐</p>
+    <a href="/logout">Logout</a>
+</div>
+
+</body>
+</html>
